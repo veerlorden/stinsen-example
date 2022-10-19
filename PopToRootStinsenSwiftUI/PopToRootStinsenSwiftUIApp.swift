@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import Stinsen
 
 @main
 struct PopToRootStinsenSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationViewCoordinator(
+                MainCoordinator()
+            )
+            .view()
         }
     }
 }
